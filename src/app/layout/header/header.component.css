@@ -1,0 +1,97 @@
+.layout_header {
+    background-color: #2E4053;
+}
+
+/* ---Button--- */
+.btn-start {
+    background-color: #40C2A6;
+    color: white;
+}
+
+.btn-stop {
+    color: white;
+}
+
+.btn-reset {
+    color: white;
+    background-color: #f57600;
+}
+
+.loading {
+    height: 5px;
+    width: 5px;
+}
+
+/* ---Font--- */
+.f-15 {
+    font-size: 15px !important;
+}
+
+.f-20 {
+    font-size: 20px !important;
+}
+
+.f-18 {
+    font-size: 18px !important;
+}
+
+/* ---WH--- */
+.w-100 {
+    width: 100% !important;
+}
+
+/* ---Effect--- */
+.dropdown-item:hover,
+.selected {
+    background-color: #2E4053;
+    color: white;
+}
+
+.selected a {
+    color: white;
+}
+
+.dropdown-toggle {
+    width: 100%;
+}
+
+.select-btn {
+    border-radius: 8px;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.taskbar-note {
+    background-color: #2E4053;
+    border-radius: 5px;
+}
+
+.task-element {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.task-element::after {
+    content: "";
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: 2px dashed white;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transition: all .3s cubic-bezier(.53, -.67, .73, .74);
+    transform: none;
+    opacity: 0;
+}
+
+.task-element:hover:after {
+    transition: all .3s cubic-bezier(.37,.74,.15,1.65);
+    transform: scale(1.1);
+    opacity: 1;
+}

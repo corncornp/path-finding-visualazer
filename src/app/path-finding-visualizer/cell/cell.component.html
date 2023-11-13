@@ -1,0 +1,12 @@
+<div class="cell cursor-pointer" id="{{cell.row + cell.column}}"
+    [ngClass]="{
+        'cell-start': cell.isStart === true, 
+        'cell-finish': cell.isFinish === true, 
+        'cell-visited': cell.isAnimate === true && cell.isStart !== true && cell.isFinish !== true, 
+        'cell-wall': cell.isWall === true, 
+        'cell-path': cell.isPath === true && cell.isAnimate === true
+    }">
+    <i class="fa fa-solid fa-bomb text-white" *ngIf="cell.isWall === true"></i>
+    <i class="fa fa-solid fa-map-pin"  *ngIf="cell.isStart"></i>
+    <i class="fa fa-solid fa-bullseye" *ngIf="cell.isFinish"></i>
+</div>

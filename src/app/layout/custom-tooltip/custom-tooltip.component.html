@@ -1,0 +1,9 @@
+<div class="custom-tooltip card">
+    <div class="card-header font-weight-bold text-uppercase text-center text-white"
+        [ngClass]="{'bg-start': type === 1, 'bg-finish': type === 2, 'bg-bomb': type === 3}"
+    >
+        {{title}}
+    </div>
+    <div class="card-body">{{content}}</div>
+    <div class="card-footer"><i class="fa fa-solid fa-asterisk me-2"></i>{{footer}}</div>
+</div>

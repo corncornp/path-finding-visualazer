@@ -1,0 +1,15 @@
+<div class="mainGrid">
+    <div class="grid mt-5">
+        <div *ngFor="let row of grid; let i = index" class="d-flex justify-content-center">
+            <div *ngFor="let cell of row">
+                <app-cell
+                    class="cursor-pointer"
+                    [cell]="cell"
+                    (mousedown)="OnMouseDown(cell.row, cell.column)"
+                    (mouseenter)="OnMouseEnter(cell.row, cell.column)"
+                    (mouseup)="OnMouseUp()">
+                </app-cell>
+            </div>
+        </div>
+    </div>
+</div>

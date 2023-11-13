@@ -1,0 +1,100 @@
+.cell {
+    width: 30px;
+    height: 30px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-start {
+    /* background-color: red; */
+}
+
+.cell-start i, .cell-finish i {
+  font-size: 23px;
+}
+
+.cell-start i {
+  color: #f57600;
+}
+
+.cell-finish i {
+  color: #149935;
+}
+
+.cell-finish {
+    /* background-color: green; */
+}
+
+.cell-visited {
+    background-color: blue;
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.cell-path {
+    background-color: blue;
+    animation-name: drawPathAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.cell-wall {
+    background-color: #0E2F3E;
+}
+
+@keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: rgba(0, 0, 66, 0.75);
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: rgba(17, 104, 217, 0.75);
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(0, 217, 159, 0.75);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgba(0, 190, 218, 0.75);
+    }
+}
+
+@keyframes drawPathAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: rgba(244, 164, 133, 0.75);
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: rgba(248, 204, 122, 0.75);
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(248, 213, 119, 0.75);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgba(252, 213, 78, 0.75);
+    }
+}

@@ -1,0 +1,27 @@
+.custom-tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.bg-start {
+    background-color: #f57600;
+}
+
+.bg-finish {
+    background-color: #149935;
+}
+
+.bg-bomb {
+    background-color: #0E2F3E;
+}
